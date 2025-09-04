@@ -1,0 +1,1 @@
+index=auth_logs sourcetype=csv action="failed" | stats count by user , src_ip
