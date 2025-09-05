@@ -12,4 +12,4 @@ Detect brute-force login attempts using Splunk.
 ```spl
 index=auth_logs action=failure 
 | stats count by src_ip, user 
-| where count > 5
+
